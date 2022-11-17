@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <style>
+        .conatiner{
+            display: table-cell;
+            position: relative;
+        }
+        body{
+            height: 100vh;
+            background: linear-gradient(white, black);
+            font-family: sans-serif;
+        }
+        .main {
+            margin: 0 auto;
+            width: 400px;
+            padding: 20px;
+            border: 2px solid black;
+            display: inline-block;
+            position: absolute;
+            top: 45%;
+            left: 43%;
+            margin-top: -147px;
+            margin-left: -94px;
+            background-color: white;
+        }
+        label {
+            width: 80%;
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 20px;
+            margin: 4px 0;
+        }
+        input {
+            padding: 8px 16px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border-color: lightblue;
+            width: 400px;
+        }
+    </style>
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Sentiment Analysis</h1>
+            <input type="text" id="input" placeholder="Enter the text that you wish to analyze!"><br><br>
+            <button id="submit" onclick="loadDoc()" class="pure-button pure-button-active">Calculate Score!</button><br><br>
+            <p>Sentiment Analysis Score: <span id='score'></span></p>
+
+            <script src="main.js"></script>
+        </div>
+    </div>
+</body>
+</html>
