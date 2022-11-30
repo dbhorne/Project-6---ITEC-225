@@ -13,7 +13,7 @@ function loadDoc(){
     
         // Set the request header i.e. which type of content you are sending
         xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.setRequestHeader("Authorization", "Token 3e1c75f37589b84ae40da0cb82797485b9462251")
+        xhr.setRequestHeader("Authorization", "Token a1029c81c2581c7d419f2224d4f971ccc2d15aeb")
     
         // Create a state change callback
         xhr.onreadystatechange = function () {
